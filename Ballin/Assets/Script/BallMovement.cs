@@ -9,6 +9,8 @@ public class BallMovement : MonoBehaviour
 
     public float runSpeed;
 
+    public float constboost;
+
 
     Rigidbody rb;
     // Start is called before the first frame update
@@ -25,6 +27,6 @@ public class BallMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity += new Vector3(horizontal * runSpeed,0f, 0f);
+        rb.velocity += new Vector3(horizontal * runSpeed,0f, constboost);
     }
 }
