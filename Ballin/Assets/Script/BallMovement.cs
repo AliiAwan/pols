@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Build.Content;
 using UnityEngine;
 
 public class BallMovement : MonoBehaviour
@@ -25,8 +26,18 @@ public class BallMovement : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
     }
 
+    Vector3 lastPosition = Vector3.zero;
+
     private void FixedUpdate()
     {
         rb.velocity += new Vector3(horizontal * runSpeed,0f, constboost);
+        float speed = (transform.position - lastPosition).magnitude;
+        GlobalManager.Speed = (float) ((int)(speed * 100)) / 10;
+        lastPosition = transform.position;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(this.gameObject);
     }
 }
