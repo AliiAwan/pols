@@ -358,11 +358,12 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.UI.ref.dll"
-"Assets/Script/BallMovement.cs"
-"Assets/Script/GlobalManager.cs"
-"Assets/Script/Levelgenerator.cs"
-"Assets/Script/TempCameraScript.cs"
-"Assets/Script/TextScript.cs"
+"Assets/Script/Game/BallMovement.cs"
+"Assets/Script/Game/GlobalManager.cs"
+"Assets/Script/Game/Levelgenerator.cs"
+"Assets/Script/Game/TempCameraScript.cs"
+"Assets/Script/Game/TextScript.cs"
+"Assets/Script/TitleScreen/OpenScene.cs"
 -langversion:9.0
 
 /deterministic
