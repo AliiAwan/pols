@@ -361,6 +361,7 @@
 "Assets/Script/Game/BallMovement.cs"
 "Assets/Script/Game/GlobalManager.cs"
 "Assets/Script/Game/Levelgenerator.cs"
+"Assets/Script/Game/MoveAutomatically.cs"
 "Assets/Script/Game/TempCameraScript.cs"
 "Assets/Script/Game/TextScript.cs"
 "Assets/Script/TitleScreen/OpenScene.cs"

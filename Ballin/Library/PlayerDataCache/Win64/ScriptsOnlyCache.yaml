@@ -61,6 +61,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: OpenScene
     methodName: openScene
+  - assembly: Assembly-CSharp
+    fullTypeName: OpenScene
+    methodName: QuitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: OpenScene
+    methodName: openScene
   sceneClasses:
     Assets/Scenes/Game.unity:
     - Class: 1
@@ -98,28 +104,73 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1988}
     - Class: 114
-      Script: {instanceID: 2702}
+      Script: {instanceID: 2704}
     - Class: 114
-      Script: {instanceID: 2936}
+      Script: {instanceID: 2938}
     - Class: 114
-      Script: {instanceID: 5466}
+      Script: {instanceID: 5468}
     - Class: 114
-      Script: {instanceID: 6108}
+      Script: {instanceID: 6110}
     - Class: 114
-      Script: {instanceID: 6136}
+      Script: {instanceID: 6138}
     - Class: 114
-      Script: {instanceID: 6284}
+      Script: {instanceID: 6286}
     - Class: 114
-      Script: {instanceID: 6634}
+      Script: {instanceID: 6636}
     - Class: 114
-      Script: {instanceID: 6850}
+      Script: {instanceID: 6852}
     - Class: 114
-      Script: {instanceID: 7082}
+      Script: {instanceID: 7084}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 135
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Settings.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 2704}
+    - Class: 114
+      Script: {instanceID: 2938}
+    - Class: 114
+      Script: {instanceID: 5468}
+    - Class: 114
+      Script: {instanceID: 6110}
+    - Class: 114
+      Script: {instanceID: 6286}
+    - Class: 114
+      Script: {instanceID: 6636}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -165,25 +216,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2258}
     - Class: 114
-      Script: {instanceID: 2702}
+      Script: {instanceID: 2670}
     - Class: 114
-      Script: {instanceID: 2936}
+      Script: {instanceID: 2704}
     - Class: 114
-      Script: {instanceID: 3252}
+      Script: {instanceID: 2938}
     - Class: 114
-      Script: {instanceID: 4368}
+      Script: {instanceID: 3254}
     - Class: 114
-      Script: {instanceID: 4656}
+      Script: {instanceID: 4370}
     - Class: 114
-      Script: {instanceID: 5466}
+      Script: {instanceID: 4658}
     - Class: 114
-      Script: {instanceID: 6108}
+      Script: {instanceID: 5468}
     - Class: 114
-      Script: {instanceID: 6284}
+      Script: {instanceID: 6110}
     - Class: 114
-      Script: {instanceID: 6634}
+      Script: {instanceID: 6286}
     - Class: 114
-      Script: {instanceID: 23834}
+      Script: {instanceID: 6636}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -351,6 +402,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineVirtualCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 60cd21a678e3c632c6b77fe8e1fcc35f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OpenScene
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -1037,7 +1094,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 23a47948c1b0f021bda7da2307e01853
+      Hash: ec48e95be9a172179f327da03985bb21
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BallMovement
@@ -1293,14 +1350,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 60cd21a678e3c632c6b77fe8e1fcc35f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: OpenScene
   platform: 19
   scenePathNames:
   - Assets/Scenes/TitleScreen.unity
   - Assets/Scenes/Game.unity
+  - Assets/Scenes/Settings.unity
   playerPath: C:/Ballin/Projekt/pols/Builds/Ballin.exe

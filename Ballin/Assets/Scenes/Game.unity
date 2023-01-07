@@ -566,6 +566,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 1547152324}
   Chunks:
+  - {fileID: 2767995023347049088, guid: 1cc391a5e78046a4da0237eb0d472ec7, type: 3}
+  - {fileID: 2767995023347049088, guid: f9d9cae17a64b9e4696e0dd5ac8358cc, type: 3}
+  - {fileID: 2767995023347049088, guid: 8e73bdbd1e34f764f96239087b7c57a5, type: 3}
   - {fileID: 2767995023347049088, guid: 581c22a51c22ecd4e8366a8aa34db64e, type: 3}
   maxdistance: 200
   shifty: -41.02
@@ -769,11 +772,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ea6f8ee30ca4b4b42a8270cb4acbb7de, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ea6f8ee30ca4b4b42a8270cb4acbb7de, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.87
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ea6f8ee30ca4b4b42a8270cb4acbb7de, type: 3}
       propertyPath: m_LocalPosition.z

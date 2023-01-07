@@ -24,8 +24,8 @@ public class Levelgenerator : MonoBehaviour
         for (int i = 1; i <(startamount+1); i++)
         {
             GameObject selected = Chunks[Random.Range(0, Chunks.Count)];
-            selected.transform.position = new Vector3(0, i * shifty, i * shiftz);
             GameObject loaded = Instantiate(selected);
+            loaded.transform.position = new Vector3(0, i * shifty, i * shiftz);
             ChunkloadedList.Add(loaded);
         }
 
