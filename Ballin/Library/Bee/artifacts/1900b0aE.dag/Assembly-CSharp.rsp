@@ -361,6 +361,7 @@
 "Assets/Script/Game/TempCameraScript.cs"
 "Assets/Script/Game/TextScript.cs"
 "Assets/Script/Settings/Resolutionchanger.cs"
+"Assets/Script/Settings/ReturnToMenu.cs"
 "Assets/Script/TitleScreen/OpenScene.cs"
 -langversion:9.0
 

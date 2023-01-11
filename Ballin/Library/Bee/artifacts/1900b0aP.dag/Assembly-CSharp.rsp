@@ -109,8 +109,6 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"C:/Ballin/Projekt/pols/Ballin/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/AOT/Newtonsoft.Json.dll"
--r:"C:/Ballin/Projekt/pols/Ballin/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.ComponentModel.Composition.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Core.dll"
@@ -299,6 +297,8 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VRModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.WindModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll"
+-r:"C:/Users/admin/Documents/Data/Schule/4.Klasse/PRE/pols/Ballin/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/AOT/Newtonsoft.Json.dll"
+-r:"C:/Users/admin/Documents/Data/Schule/4.Klasse/PRE/pols/Ballin/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Cinemachine.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Services.Core.Analytics.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Services.Core.Environments.ref.dll"
@@ -312,8 +312,11 @@
 "Assets/Script/Game/BallMovement.cs"
 "Assets/Script/Game/GlobalManager.cs"
 "Assets/Script/Game/Levelgenerator.cs"
+"Assets/Script/Game/MoveAutomatically.cs"
 "Assets/Script/Game/TempCameraScript.cs"
 "Assets/Script/Game/TextScript.cs"
+"Assets/Script/Settings/Resolutionchanger.cs"
+"Assets/Script/Settings/ReturnToMenu.cs"
 "Assets/Script/TitleScreen/OpenScene.cs"
 -langversion:9.0
 
