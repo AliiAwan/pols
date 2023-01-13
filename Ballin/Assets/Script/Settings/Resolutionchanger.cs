@@ -19,13 +19,16 @@ public class Resolutionchanger : MonoBehaviour
 		switch (resolutionIndex)
 		{
 			case 0:
-				Screen.SetResolution(1280, 720, true);
+				Screen.SetResolution(1920, 1080, true);
 				break;
 			case 1:
-				Screen.SetResolution(1920, 1080, true);
+				Screen.SetResolution(1280, 720, true);
+				break;
+			case 2:
+				Screen.SetResolution(640, 360, true);
 				break;
 		}
 		Debug.Log("Aktuelle Auflösung: " + Screen.width + "x" + Screen.height);
-		TMP_TextresolutionText.text = Screen.width + "x" + Screen.height;
+		TMP_TextresolutionText.text = "Cur. Res.:"+ Screen.width + "x" + Screen.height;
 	}
 }
