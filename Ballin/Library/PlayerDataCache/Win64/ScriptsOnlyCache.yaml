@@ -85,6 +85,9 @@ ScriptsOnlyBuild:
     methodName: openScene
   - assembly: Assembly-CSharp
     fullTypeName: Resolutionchanger
+    methodName: ChangeWindowMode
+  - assembly: Assembly-CSharp
+    fullTypeName: Resolutionchanger
     methodName: ChangeResolution
   - assembly: Assembly-CSharp
     fullTypeName: ReturnToMenu
@@ -122,27 +125,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1992}
+      Script: {instanceID: 10696}
     - Class: 114
-      Script: {instanceID: 2414}
+      Script: {instanceID: 11114}
     - Class: 114
-      Script: {instanceID: 2710}
+      Script: {instanceID: 11406}
     - Class: 114
-      Script: {instanceID: 2944}
+      Script: {instanceID: 11634}
     - Class: 114
-      Script: {instanceID: 5478}
+      Script: {instanceID: 14130}
     - Class: 114
-      Script: {instanceID: 6120}
+      Script: {instanceID: 14764}
     - Class: 114
-      Script: {instanceID: 6148}
+      Script: {instanceID: 14792}
     - Class: 114
-      Script: {instanceID: 6296}
+      Script: {instanceID: 14938}
     - Class: 114
-      Script: {instanceID: 6646}
+      Script: {instanceID: 15288}
     - Class: 114
-      Script: {instanceID: 6862}
+      Script: {instanceID: 15502}
     - Class: 114
-      Script: {instanceID: 7094}
+      Script: {instanceID: 15734}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -193,37 +196,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1598}
+      Script: {instanceID: 10306}
     - Class: 114
-      Script: {instanceID: 2710}
+      Script: {instanceID: 11406}
     - Class: 114
-      Script: {instanceID: 2944}
+      Script: {instanceID: 11634}
     - Class: 114
-      Script: {instanceID: 3002}
+      Script: {instanceID: 11692}
     - Class: 114
-      Script: {instanceID: 3200}
+      Script: {instanceID: 11890}
     - Class: 114
-      Script: {instanceID: 3264}
+      Script: {instanceID: 11954}
     - Class: 114
-      Script: {instanceID: 4118}
+      Script: {instanceID: 12794}
     - Class: 114
-      Script: {instanceID: 5328}
+      Script: {instanceID: 13984}
     - Class: 114
-      Script: {instanceID: 5478}
+      Script: {instanceID: 14130}
     - Class: 114
-      Script: {instanceID: 5764}
+      Script: {instanceID: 14410}
     - Class: 114
-      Script: {instanceID: 6120}
+      Script: {instanceID: 14764}
     - Class: 114
-      Script: {instanceID: 6296}
+      Script: {instanceID: 14938}
     - Class: 114
-      Script: {instanceID: 6646}
+      Script: {instanceID: 15288}
     - Class: 114
-      Script: {instanceID: 6658}
+      Script: {instanceID: 15300}
     - Class: 114
-      Script: {instanceID: 7498}
+      Script: {instanceID: 16136}
     - Class: 114
-      Script: {instanceID: 7798}
+      Script: {instanceID: 16434}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -276,29 +279,29 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1598}
+      Script: {instanceID: 10306}
     - Class: 114
-      Script: {instanceID: 2262}
+      Script: {instanceID: 10964}
     - Class: 114
-      Script: {instanceID: 2676}
+      Script: {instanceID: 11372}
     - Class: 114
-      Script: {instanceID: 2710}
+      Script: {instanceID: 11406}
     - Class: 114
-      Script: {instanceID: 2944}
+      Script: {instanceID: 11634}
     - Class: 114
-      Script: {instanceID: 3264}
+      Script: {instanceID: 11954}
     - Class: 114
-      Script: {instanceID: 4380}
+      Script: {instanceID: 13046}
     - Class: 114
-      Script: {instanceID: 4668}
+      Script: {instanceID: 13334}
     - Class: 114
-      Script: {instanceID: 5478}
+      Script: {instanceID: 14130}
     - Class: 114
-      Script: {instanceID: 6120}
+      Script: {instanceID: 14764}
     - Class: 114
-      Script: {instanceID: 6296}
+      Script: {instanceID: 14938}
     - Class: 114
-      Script: {instanceID: 6646}
+      Script: {instanceID: 15288}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -612,7 +615,7 @@ ScriptsOnlyBuild:
     className: UnityOnDropdownValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: cf43a9b56e2a20a09ac337b3157effb8
+      Hash: 73a5e1b3ce2c670aa85763aebb4838f7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Resolutionchanger
@@ -1437,4 +1440,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/TitleScreen.unity
   - Assets/Scenes/Game.unity
   - Assets/Scenes/Settings.unity
-  playerPath: C:/Game Builds/Ballin.exe
+  playerPath: C:/Users/admin/Desktop/Unity Build/Ballin.exe
