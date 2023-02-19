@@ -11,8 +11,8 @@ public class Levelgenerator : MonoBehaviour
     private List<GameObject> ChunkloadedList = new List<GameObject>();
 
     public float maxdistance;
-    public float shifty= -10.255f;
-    public float shiftz= 28.15f;
+    public float shifty= -10.255f; // -10.255f
+    public float shiftz= 28.15f; // 28.15f
 
     private float lastenddisz;
     private float lastenddisy;
