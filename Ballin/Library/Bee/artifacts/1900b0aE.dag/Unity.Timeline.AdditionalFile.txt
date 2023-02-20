@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-C:\Users\filip\source\repos\pols\Ballin
-=======
-C:\Users\admin\Documents\Data\Schule\4.Klasse\PRE\pols\Ballin
->>>>>>> 890c980d49dc6e05d845fb9055e051621b2ffb68
+C:\Games\Pre Projekt\pols\Ballin
