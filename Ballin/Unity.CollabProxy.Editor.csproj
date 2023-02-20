@@ -489,9 +489,6 @@
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="ReportGeneratorMerged">
-      <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -891,10 +888,6 @@
     <ProjectReference Include="Unity.Services.Core.Editor.csproj">
       <Project>{04057339-7E10-BD89-DAFA-3A54AB35D77F}</Project>
       <Name>Unity.Services.Core.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Settings.Editor.csproj">
-      <Project>{23265F3C-4B7E-7322-8D49-C686134E13EF}</Project>
-      <Name>Unity.Settings.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{73F83B18-AE2D-310E-C527-4DA357F003B9}</Project>

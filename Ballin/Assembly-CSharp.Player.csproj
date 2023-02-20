@@ -662,6 +662,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.Services.Core.Analytics.Player.csproj">
+      <Project>{7CA83C3C-FDAE-703A-5EFF-6F5123B715F5}</Project>
+      <Name>Unity.Services.Core.Analytics.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.Environments.Player.csproj">
+      <Project>{B1F7172D-BB59-E744-7E5B-B87D38BD7E2F}</Project>
+      <Name>Unity.Services.Core.Environments.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Player.csproj">
       <Project>{C2288500-C663-5517-F1E0-BAFB34066AA0}</Project>
       <Name>Unity.Timeline.Player</Name>
@@ -682,25 +690,13 @@
       <Project>{3EB4C62A-8FC3-04D0-3636-A4F46440A507}</Project>
       <Name>Unity.Services.Core.Player</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Core.Player.csproj">
-      <Project>{4CC799E3-2CB5-E2B2-55BA-54D45C6C77D0}</Project>
-      <Name>Unity.VisualScripting.Core.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Cinemachine.Player.csproj">
-      <Project>{A7561D40-A5A2-6467-397E-62417C5414FD}</Project>
-      <Name>Cinemachine.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Services.Core.Analytics.Player.csproj">
-      <Project>{7CA83C3C-FDAE-703A-5EFF-6F5123B715F5}</Project>
-      <Name>Unity.Services.Core.Analytics.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Services.Core.Environments.Player.csproj">
-      <Project>{B1F7172D-BB59-E744-7E5B-B87D38BD7E2F}</Project>
-      <Name>Unity.Services.Core.Environments.Player</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.Player.csproj">
       <Project>{E5304D4A-172E-91D6-1F47-4F4AB485918C}</Project>
       <Name>Unity.VisualScripting.State.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Core.Player.csproj">
+      <Project>{4CC799E3-2CB5-E2B2-55BA-54D45C6C77D0}</Project>
+      <Name>Unity.VisualScripting.Core.Player</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
