@@ -567,6 +567,12 @@ MonoBehaviour:
   Player: {fileID: 1547152324}
   Chunks:
   - {fileID: 2767995023347049088, guid: 8e73bdbd1e34f764f96239087b7c57a5, type: 3}
+  - {fileID: 2767995023347049088, guid: e203d6eaa3ea1924c85638c2009cfe11, type: 3}
+  - {fileID: 2767995023347049088, guid: a145fc00f1777d348897347225146a3a, type: 3}
+  - {fileID: 2767995023347049088, guid: f3bf3f1378d47504080ed7da124d8139, type: 3}
+  - {fileID: 2767995023347049088, guid: 86f514de1c4963841a68f43954b61235, type: 3}
+  - {fileID: 2767995023347049088, guid: 1bdae4d37c975a64bb145770825625db, type: 3}
+  - {fileID: 2767995023347049088, guid: 2f8fb0f65e98c184383f4565d73d2575, type: 3}
   maxdistance: 200
   shifty: -27
   shiftz: 74
@@ -840,7 +846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 1.02
   constboost: 0.1
-  boostamount: 1.1
+  boostamount: 2.5
 --- !u!135 &1547152326
 SphereCollider:
   m_ObjectHideFlags: 0
