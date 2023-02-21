@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BallMovement : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class BallMovement : MonoBehaviour
     public float constboost;
 
     public float boostamount;
+
+    public float boostslowrate;
 
 
     Rigidbody rb;
@@ -31,7 +34,8 @@ public class BallMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity += new Vector3(horizontal * runSpeed, 0f, constboost);
+        rb.velocity += new Vector3(horizontal * runSpeed, 0f, (boostslowrate*rb.velocity.z+constboost));
+        Debug.Log((boostslowrate * rb.velocity.z + constboost));
         float speed = (transform.position - lastPosition).magnitude;
         GlobalManager.Speed = (float)((int)(speed * 100)) / 10;
         lastPosition = transform.position;
@@ -45,7 +49,16 @@ public class BallMovement : MonoBehaviour
         }
         else
         {
-            Destroy(this.gameObject);
+            rb.constraints = RigidbodyConstraints.FreezeAll;
+            Destroy(this.gameObject.GetComponent<MeshRenderer>());
+
+            Invoke("loadDeathScreen", 4);
         }
+    }
+
+    private void loadDeathScreen()
+    {
+        SceneManager.LoadScene("DeathScreen");
+        Debug.Log("Death Screen loaded");
     }
 }

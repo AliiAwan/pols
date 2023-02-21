@@ -16,4 +16,6 @@ public class GlobalManager
      */
 
     public static bool FullScreen { get; set; } = true;
+
+    public static bool IsPaused { get; set; }
 }
