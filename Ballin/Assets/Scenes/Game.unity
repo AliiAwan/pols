@@ -567,6 +567,12 @@ MonoBehaviour:
   Player: {fileID: 1547152324}
   Chunks:
   - {fileID: 2767995023347049088, guid: 8e73bdbd1e34f764f96239087b7c57a5, type: 3}
+  - {fileID: 2767995023347049088, guid: b4f73605c57aae8498fde31b1376388c, type: 3}
+  - {fileID: 2767995023347049088, guid: 3d8b8f03f93465441b04f163ccc2f0c2, type: 3}
+  - {fileID: 2767995023347049088, guid: d559428e5d55f1d4d963b6c3daea5f95, type: 3}
+  - {fileID: 2767995023347049088, guid: d922a16838fd44e4d98d3dba3b7447fb, type: 3}
+  - {fileID: 2767995023347049088, guid: 433298e99282f70489829b8185eff200, type: 3}
+  - {fileID: 2767995023347049088, guid: 83034a4b579b73d4e9020e5a0e8e68c6, type: 3}
   maxdistance: 200
   shifty: -27
   shiftz: 74
