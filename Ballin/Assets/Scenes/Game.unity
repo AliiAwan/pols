@@ -708,6 +708,8 @@ MonoBehaviour:
   - {fileID: 2767995023347049088, guid: d922a16838fd44e4d98d3dba3b7447fb, type: 3}
   - {fileID: 2767995023347049088, guid: 433298e99282f70489829b8185eff200, type: 3}
   - {fileID: 2767995023347049088, guid: 83034a4b579b73d4e9020e5a0e8e68c6, type: 3}
+  - {fileID: 2767995023347049088, guid: 171ef386d0dadbf47900053ddb0344f4, type: 3}
+  - {fileID: 2767995023347049088, guid: 8d416f8fffa73574bbc9ed0c5cb11051, type: 3}
   maxdistance: 200
   shifty: -27
   shiftz: 74
@@ -1046,7 +1048,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: ea6f8ee30ca4b4b42a8270cb4acbb7de, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 548f7bc5683a8fe4e8f15f438129be2f, type: 2}
+      objectReference: {fileID: 2100000, guid: d6ebb19fbb5e93e48bbe80d0aa4c5c0e, type: 2}
     - target: {fileID: 919132149155446097, guid: ea6f8ee30ca4b4b42a8270cb4acbb7de, type: 3}
       propertyPath: m_Name
       value: Ball
