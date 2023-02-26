@@ -36,7 +36,7 @@ public class MoveAutomatically : MonoBehaviour
 
         float hordis = maxright - maxleft;
         float vertdis = maxup - maxdown;
-        
+
         this.transform.position= new Vector3(Random.Range(maxleft, maxright), Random.Range(maxdown, maxup), this.transform.position.z);
     }
 
@@ -48,21 +48,25 @@ public class MoveAutomatically : MonoBehaviour
             this.transform.position = new Vector3(this.transform.position.x-moveby, this.transform.position.y, this.transform.position.z); 
         else
             this.transform.position = new Vector3(this.transform.position.x + moveby, this.transform.position.y, this.transform.position.z);
-        
+
         if(this.transform.position.x <maxleft)
             goesleft = false;
         else if(this.transform.position.x > maxright)
             goesleft = true;
 
-        //vertical movement
-        if (goesdown)
-            this.transform.position = new Vector3(this.transform.position.x , this.transform.position.y - moveby, this.transform.position.z);
-        else
-            this.transform.position = new Vector3(this.transform.position.x , this.transform.position.y + moveby, this.transform.position.z);
+        if(movedown !=0 && moveup !=0)
+        {
+            //vertical movement
+            if (goesdown)
+                this.transform.position = new Vector3(this.transform.position.x , this.transform.position.y - moveby, this.transform.position.z);
+            else
+                this.transform.position = new Vector3(this.transform.position.x , this.transform.position.y + moveby, this.transform.position.z);
 
-        if (this.transform.position.y < maxdown)
-            goesdown = false;
-        else if (this.transform.position.y > maxup)
-            goesdown = true;
+            if (this.transform.position.y < maxdown)
+                goesdown = false;
+            else if (this.transform.position.y > maxup)
+                goesdown = true;
+        }
+
     }
 }

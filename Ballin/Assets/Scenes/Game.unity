@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 6633fe3f047ffc5468821278552c1049, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44853193, g: 0.4985795, b: 0.5756509, a: 1}
+  m_IndirectSpecularColor: {r: 0.52111924, g: 0.5709608, b: 0.6155653, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -708,11 +708,12 @@ MonoBehaviour:
   - {fileID: 2767995023347049088, guid: d922a16838fd44e4d98d3dba3b7447fb, type: 3}
   - {fileID: 2767995023347049088, guid: 433298e99282f70489829b8185eff200, type: 3}
   - {fileID: 2767995023347049088, guid: 83034a4b579b73d4e9020e5a0e8e68c6, type: 3}
-  - {fileID: 2767995023347049088, guid: 171ef386d0dadbf47900053ddb0344f4, type: 3}
-  - {fileID: 2767995023347049088, guid: 8d416f8fffa73574bbc9ed0c5cb11051, type: 3}
+  - {fileID: 2767995023347049088, guid: 689f04ba04ff1464c96ba5c9947d7e46, type: 3}
+  - {fileID: 2767995023347049088, guid: 09c278fa17f7df34bae92ca65cce61e2, type: 3}
+  - {fileID: 2767995023347049088, guid: 55b9fddea148f3b41a6da81aa343921f, type: 3}
   maxdistance: 200
-  shifty: -27
-  shiftz: 74
+  shifty: -27.4
+  shiftz: 75.15
 --- !u!4 &773311983
 Transform:
   m_ObjectHideFlags: 0
@@ -934,7 +935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7483875200348349748, guid: 42738ed2b8703a1449575e84db4d4e95, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 7483875200348349748, guid: 42738ed2b8703a1449575e84db4d4e95, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1048,7 +1049,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: ea6f8ee30ca4b4b42a8270cb4acbb7de, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d6ebb19fbb5e93e48bbe80d0aa4c5c0e, type: 2}
+      objectReference: {fileID: 2100000, guid: 548f7bc5683a8fe4e8f15f438129be2f, type: 2}
     - target: {fileID: 919132149155446097, guid: ea6f8ee30ca4b4b42a8270cb4acbb7de, type: 3}
       propertyPath: m_Name
       value: Ball
