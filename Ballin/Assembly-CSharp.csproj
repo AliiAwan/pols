@@ -61,12 +61,16 @@
     <Compile Include="Assets\Script\TitleScreen\OpenScene.cs" />
     <Compile Include="Assets\Script\Settings\ReturnToMenu.cs" />
     <Compile Include="Assets\Script\Settings\Resolutionchanger.cs" />
+    <Compile Include="Assets\Script\menus\Buttons.cs" />
     <Compile Include="Assets\Script\Game\GlobalManager.cs" />
     <Compile Include="Assets\Script\Game\TextScript.cs" />
     <Compile Include="Assets\Script\Game\BallMovement.cs" />
     <Compile Include="Assets\Script\Game\TempCameraScript.cs" />
     <Compile Include="Assets\Script\Game\PauseMenuScript.cs" />
-    <Compile Include="Assets\Script\menus\Buttons.cs" />
+    <Compile Include="Assets\Script\menus\Statsdisplayer.cs" />
+    <Compile Include="Assets\Script\SaveSystem\SaveSystem.cs" />
+    <Compile Include="Assets\Script\SaveSystem\PlayerTemplate.cs" />
+    <Compile Include="Assets\Script\SaveSystem\RunTemplate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -79,6 +83,7 @@
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\Textures\Aluminum-Scuffed_Unity\About these PBR files.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />

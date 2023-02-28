@@ -5,11 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
-    public string TitleScreen;
-    public string Game;
-    public string Shop;
-    public string Settings;
+    public string TitleScreen = "TitleScreen";
+    public string Game = "Game";
+    public string Shop = "Shop";
+    public string Settings = "Settings";
+    public string Statistics = "Statistics";
 
+    public void OpenStatistics()
+    {
+        SceneManager.LoadScene("Statistics");
+    }
     public void OpenTitleScreen()
     {
         SceneManager.LoadScene(TitleScreen);

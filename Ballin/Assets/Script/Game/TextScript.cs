@@ -16,6 +16,6 @@ public class TextScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        text.text = "Speed:" + GlobalManager.Speed;
+        text.text = "Speed:" + GlobalManager.Speed+"\nDistance:"+GlobalManager.Distance;
     }
 }

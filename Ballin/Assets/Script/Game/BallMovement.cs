@@ -16,6 +16,8 @@ public class BallMovement : MonoBehaviour
 
     public float boostslowrate;
 
+    public GameObject Spawnpoint;
+
 
     Rigidbody rb;
     // Start is called before the first frame update
@@ -39,6 +41,8 @@ public class BallMovement : MonoBehaviour
         float speed = (transform.position - lastPosition).magnitude;
         GlobalManager.Speed = (float)((int)(speed * 100)) / 10;
         lastPosition = transform.position;
+
+        GlobalManager.Distance = Vector3.Distance(this.gameObject.transform.position, Spawnpoint.transform.position)/10;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -51,6 +55,11 @@ public class BallMovement : MonoBehaviour
         {
             rb.constraints = RigidbodyConstraints.FreezeAll;
             Destroy(this.gameObject.GetComponent<MeshRenderer>());
+
+            //save data of run
+            GlobalManager.Runs.Add(new RunTemplate() { distance = GlobalManager.Distance, Score = GlobalManager.Score });
+            SaveSystem.SavePlayer();
+
 
             Invoke("loadDeathScreen", 4);
         }
