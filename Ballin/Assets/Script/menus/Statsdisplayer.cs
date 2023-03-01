@@ -16,7 +16,7 @@ public class Statsdisplayer : MonoBehaviour
         {
             foreach (RunTemplate r in GlobalManager.Runs)
             {
-                runs += "" + r.Score + "\n";
+                runs += "" + r.Score + "m\n";
             }
 
             display.text = runs;
