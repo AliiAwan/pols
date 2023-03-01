@@ -12,6 +12,7 @@ public class PauseMenuScript : MonoBehaviour
     void Start()
     {
         GlobalManager.IsPaused = false;
+        GlobalManager.Pausable = true;
         PauseMenu.SetActive(false);
 
         normalTimeScale = Time.timeScale;
@@ -22,7 +23,7 @@ public class PauseMenuScript : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.F))
         {
-            if(GlobalManager.IsPaused)// game is paused and pausemenu is already displayed
+            if(GlobalManager.IsPaused || !GlobalManager.Pausable)// game is paused and pausemenu is already displayed
             {
                 GlobalManager.IsPaused = false;
                 PauseMenu.SetActive(false);

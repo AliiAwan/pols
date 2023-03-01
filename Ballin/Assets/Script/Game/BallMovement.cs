@@ -8,6 +8,8 @@ public class BallMovement : MonoBehaviour
 
     float horizontal;
 
+    public GameObject Canvas;
+
     public float runSpeed;
 
     public float constboost;
@@ -23,6 +25,7 @@ public class BallMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GlobalManager.Death = false;
         rb = GetComponent<Rigidbody>();
     }
 
@@ -42,32 +45,40 @@ public class BallMovement : MonoBehaviour
         GlobalManager.Speed = (float)((int)(speed * 100)) / 10;
         lastPosition = transform.position;
 
-        GlobalManager.Distance = Vector3.Distance(this.gameObject.transform.position, Spawnpoint.transform.position)/10;
-    }
+        float f = Vector3.Distance(this.gameObject.transform.position, Spawnpoint.transform.position)/30;
+		f = Mathf.Round(f * 10.0f);
+        GlobalManager.Distance = f;
+	}
 
-    private void OnTriggerEnter(Collider other)
+	private void OnTriggerEnter(Collider other)
     {
+        if (!GlobalManager.Death)
+        {
+			GlobalManager.Runs.Add(new RunTemplate() { Score = GlobalManager.Distance });
+			GlobalManager.Death = true;
+        }
+		Debug.Log("Entered death");
         if (other.gameObject.name.Contains("Speedy"))
         {
             rb.velocity *= boostamount;
         }
         else
         {
-            rb.constraints = RigidbodyConstraints.FreezeAll;
+			Invoke("loadDeathScreen",0.2f);
+			rb.constraints = RigidbodyConstraints.FreezeAll;
             Destroy(this.gameObject.GetComponent<MeshRenderer>());
 
             //save data of run
-            GlobalManager.Runs.Add(new RunTemplate() { distance = GlobalManager.Distance, Score = GlobalManager.Score });
             SaveSystem.SavePlayer();
 
 
-            Invoke("loadDeathScreen", 4);
         }
     }
 
     private void loadDeathScreen()
     {
-        SceneManager.LoadScene("DeathScreen");
+        Canvas.SetActive(true);
+        GlobalManager.Pausable = false;
         Debug.Log("Death Screen loaded");
     }
 }

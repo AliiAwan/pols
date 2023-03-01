@@ -11,11 +11,12 @@ public class Statsdisplayer : MonoBehaviour
     void Start()
     {
         string runs = "Runs:\n";
-        if (GlobalManager.Runs.Count > 0)
+		Debug.Log(GlobalManager.Runs.Count);
+		if (GlobalManager.Runs.Count > 0)
         {
             foreach (RunTemplate r in GlobalManager.Runs)
             {
-                runs += "" + r.distance + "\n";
+                runs += "" + r.Score + "\n";
             }
 
             display.text = runs;

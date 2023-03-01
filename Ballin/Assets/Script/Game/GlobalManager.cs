@@ -9,7 +9,10 @@ public class GlobalManager
     public static float Speed { get; set; }
     public static float Distance { get; set; }
 
-    public static int Res { get; set; }
+	public static bool Pausable { get; set; }
+	public static bool Death { get; set; }
+
+	public static int Res { get; set; }
 	/*
      * 0: 1920:1080
      * 1: 1280:720
