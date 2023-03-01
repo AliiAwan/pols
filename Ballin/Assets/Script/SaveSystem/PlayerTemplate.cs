@@ -5,12 +5,12 @@ using UnityEngine;
 [System.Serializable]
 public class PlayerTemplate
 {
-    public int Coins;
+    public int AllCoins;
     public List<RunTemplate> Runs;
 
     public PlayerTemplate()
     {
-        Coins = GlobalManager.Coins;
+        AllCoins = GlobalManager.AllCoins;
         Runs = GlobalManager.Runs;
     }
 }

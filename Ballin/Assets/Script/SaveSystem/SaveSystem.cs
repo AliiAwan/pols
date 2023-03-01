@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -31,8 +32,10 @@ public class SaveSystem
             PlayerTemplate data = formatter.Deserialize(stream) as PlayerTemplate;
 
             //updating the Globalmanager
-            GlobalManager.Coins = data.Coins;
+            GlobalManager.AllCoins = data.AllCoins;
             GlobalManager.Runs = data.Runs;
+
+           // GlobalManager.Runs.ForEach(x => Debug.Log("Loaded run:"+x.Distance));
 
             stream.Close();
         }
@@ -40,5 +43,13 @@ public class SaveSystem
         {
             Debug.LogError("Save File not found in:" + playerpath);
         }
+    }
+
+    public static void ClearStats()
+    {
+        GlobalManager.AllCoins = 0;
+        GlobalManager.Runs.Clear();
+        SavePlayer();
+        LoadPlayer();
     }
 }

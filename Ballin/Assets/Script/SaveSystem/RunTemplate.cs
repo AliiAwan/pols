@@ -6,10 +6,10 @@ using UnityEngine;
 public class RunTemplate 
 {
     //public float time;
-    public float Score;
+    public float Distance;
 
     public RunTemplate()
     {
-        Score = GlobalManager.Score;
+        Distance = GlobalManager.Distance;
     }
 }

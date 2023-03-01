@@ -54,7 +54,7 @@ public class BallMovement : MonoBehaviour
     {
         if (!GlobalManager.Death)
         {
-			GlobalManager.Runs.Add(new RunTemplate() { Score = GlobalManager.Distance });
+			GlobalManager.Runs.Add(new RunTemplate() { Distance = GlobalManager.Distance });
 			GlobalManager.Death = true;
         }
 		Debug.Log("Entered death");
@@ -64,11 +64,13 @@ public class BallMovement : MonoBehaviour
         }
         else
         {
-			Invoke("loadDeathScreen",0.2f);
+			Invoke("loadDeathScreen",2f);
 			rb.constraints = RigidbodyConstraints.FreezeAll;
             Destroy(this.gameObject.GetComponent<MeshRenderer>());
 
             //save data of run
+            GlobalManager.AllCoins += GlobalManager.Coins;
+            GlobalManager.Coins = 0;
             SaveSystem.SavePlayer();
 
 

@@ -34,6 +34,12 @@ public class Buttons : MonoBehaviour
         SceneManager.LoadScene(Settings);
     }
 
+    public void ResetStats()
+    {
+        SaveSystem.ClearStats();
+        Debug.Log("Runs should be cleared");
+    }
+
     public void QuitGame()
     {
         Application.Quit();

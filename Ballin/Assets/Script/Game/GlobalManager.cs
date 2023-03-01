@@ -5,7 +5,9 @@ using UnityEngine;
 public class GlobalManager
 {
     public static int Score { get; set; }
-    public static int Coins { get; set; }
+    public static int Coins { get; set; }//coins vom jetzigen run
+
+    public static int AllCoins { get; set; }//alle coins die der spieler besitzt
     public static float Speed { get; set; }
     public static float Distance { get; set; }
 

@@ -60,17 +60,18 @@
     <Compile Include="Assets\Script\Game\MoveAutomatically.cs" />
     <Compile Include="Assets\Script\TitleScreen\OpenScene.cs" />
     <Compile Include="Assets\Script\Settings\ReturnToMenu.cs" />
+    <Compile Include="Assets\Script\SaveSystem\PlayerTemplate.cs" />
     <Compile Include="Assets\Script\Settings\Resolutionchanger.cs" />
     <Compile Include="Assets\Script\menus\Buttons.cs" />
+    <Compile Include="Assets\Script\SaveSystem\SaveSystem.cs" />
     <Compile Include="Assets\Script\Game\GlobalManager.cs" />
+    <Compile Include="Assets\Script\menus\Statsdisplayer.cs" />
     <Compile Include="Assets\Script\Game\TextScript.cs" />
+    <Compile Include="Assets\Script\SaveSystem\RunTemplate.cs" />
     <Compile Include="Assets\Script\Game\BallMovement.cs" />
     <Compile Include="Assets\Script\Game\TempCameraScript.cs" />
     <Compile Include="Assets\Script\Game\PauseMenuScript.cs" />
-    <Compile Include="Assets\Script\menus\Statsdisplayer.cs" />
-    <Compile Include="Assets\Script\SaveSystem\SaveSystem.cs" />
-    <Compile Include="Assets\Script\SaveSystem\PlayerTemplate.cs" />
-    <Compile Include="Assets\Script\SaveSystem\RunTemplate.cs" />
+    <Compile Include="Assets\Script\TitleScreen\LoadPlayerData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -90,6 +91,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Script\output.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
