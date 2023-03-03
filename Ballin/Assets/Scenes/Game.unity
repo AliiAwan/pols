@@ -1386,9 +1386,9 @@ MonoBehaviour:
   - {fileID: 2767995023347049088, guid: 689f04ba04ff1464c96ba5c9947d7e46, type: 3}
   - {fileID: 2767995023347049088, guid: 09c278fa17f7df34bae92ca65cce61e2, type: 3}
   - {fileID: 2767995023347049088, guid: 55b9fddea148f3b41a6da81aa343921f, type: 3}
-  maxdistance: 200
-  shifty: -27.4
-  shiftz: 75.15
+  maxdistance: 150
+  shifty: -37.4
+  shiftz: 90.15
 --- !u!4 &773311983
 Transform:
   m_ObjectHideFlags: 0
@@ -2283,7 +2283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ea6f8ee30ca4b4b42a8270cb4acbb7de, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ea6f8ee30ca4b4b42a8270cb4acbb7de, type: 3}
       propertyPath: m_LocalRotation.w

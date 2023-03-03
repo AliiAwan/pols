@@ -40,7 +40,7 @@ public class BallMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity += new Vector3(horizontal * runSpeed, 0f, (boostslowrate*rb.velocity.z+constboost));
-        Debug.Log((boostslowrate * rb.velocity.z + constboost));
+       // Debug.Log((boostslowrate * rb.velocity.z + constboost));
         float speed = (transform.position - lastPosition).magnitude;
         GlobalManager.Speed = (float)((int)(speed * 100)) / 10;
         lastPosition = transform.position;
@@ -48,34 +48,35 @@ public class BallMovement : MonoBehaviour
         float f = Vector3.Distance(this.gameObject.transform.position, Spawnpoint.transform.position)/30;
 		f = Mathf.Round(f * 10.0f);
         GlobalManager.Distance = f;
+        Vector3 pos = rb.position;
+
+        
 	}
 
 	private void OnTriggerEnter(Collider other)
     {
-        if (!GlobalManager.Death)
-        {
-			GlobalManager.Runs.Add(new RunTemplate() { Distance = GlobalManager.Distance });
-			GlobalManager.Death = true;
-        }
-		Debug.Log("Entered death");
-        if (other.gameObject.name.Contains("Speedy"))
-        {
-            rb.velocity *= boostamount;
-        }
-        else
-        {
-			Invoke("loadDeathScreen",2f);
+		if (other.gameObject.name.Contains("Speedy"))
+		{
+			rb.velocity *= boostamount;
+		}
+		else
+		{
+			Invoke("loadDeathScreen", 2f);
 			rb.constraints = RigidbodyConstraints.FreezeAll;
-            Destroy(this.gameObject.GetComponent<MeshRenderer>());
+			Destroy(this.gameObject.GetComponent<MeshRenderer>());
 
-            //save data of run
-            GlobalManager.AllCoins += GlobalManager.Coins;
-            GlobalManager.Coins = 0;
-            SaveSystem.SavePlayer();
-
-
-        }
-    }
+			//save data of run
+			GlobalManager.AllCoins += GlobalManager.Coins;
+			GlobalManager.Coins = 0;
+			SaveSystem.SavePlayer();
+            if (!GlobalManager.Death)
+			{
+				GlobalManager.Runs.Add(new RunTemplate() { Distance = GlobalManager.Distance });
+				GlobalManager.Death = true;
+			}
+			Debug.Log("Entered death");
+		}
+	}
 
     private void loadDeathScreen()
     {
