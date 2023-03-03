@@ -28,7 +28,7 @@ public class Levelgenerator : MonoBehaviour
             GameObject loaded = Instantiate(selected);
 			GameObject loadedbarrier = Instantiate(Tod);
 			loaded.transform.position = new Vector3(0, i * shifty, i * shiftz);
-			loadedbarrier.transform.position = new Vector3(0, i * shifty - 5, i * shiftz + 5);
+			loadedbarrier.transform.position = new Vector3(0, i * shifty - 3, i * shiftz + 3);
 			ChunkloadedList.Add(loaded);
 			ChunkloadedList.Add(loadedbarrier);
 		}
@@ -57,7 +57,7 @@ public class Levelgenerator : MonoBehaviour
             ChunkloadedList.Add(loaded);
 
 			GameObject loadedbarrier = Instantiate(Tod);
-			loadedbarrier.transform.position = new Vector3(0, lastenddisy + shifty - 30, lastenddisz + shiftz + 30);
+			loadedbarrier.transform.position = new Vector3(0, lastenddisy + shifty - 3, lastenddisz + shiftz + 3);
 			ChunkloadedList.Add(loadedbarrier);
 
 			Debug.Log(ChunkloadedList[number - 1].transform.position.z);
