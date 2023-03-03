@@ -20,7 +20,7 @@ public class Levelgenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int startamount = 4;
+        int startamount = 3;
         for (int i = 1; i <=startamount; i++)
         {
             GameObject selected = Chunks[Random.Range(0, Chunks.Count)];
@@ -38,11 +38,18 @@ public class Levelgenerator : MonoBehaviour
     {
 			if (lastenddisz - Player.transform.position.z < maxdistance)
             {
-			    shifty -= Mathf.Round(GlobalManager.Speed / 4) * 2.5f;
-			    shiftz += Mathf.Round(GlobalManager.Speed / 4) * 5;
-
-			    GameObject selected = Chunks[Random.Range(0, Chunks.Count)];
-                selected.transform.position = new Vector3(0, lastenddisy + shifty, lastenddisz + shiftz);
+			    shifty = -37.4f - Mathf.Round(GlobalManager.Speed / 2) * 1;
+			    shiftz = 90.15f+  Mathf.Round(GlobalManager.Speed / 2) * 3f;
+                var number = ChunkloadedList.Count;
+                var f = Random.Range(0, Chunks.Count);
+			    if ((ChunkloadedList[number-1].gameObject.name.Contains("WrenchRamp_Segment")))
+			    {
+				    shifty -= Mathf.Round(GlobalManager.Speed / 2f) * 2 ;
+				    shiftz += Mathf.Round(GlobalManager.Speed / 4f) * 10;
+			}
+			GameObject selected = Chunks[f];
+			    
+			selected.transform.position = new Vector3(0, lastenddisy + shifty, lastenddisz + shiftz);
                 GameObject loaded = Instantiate(selected);
                 ChunkloadedList.Add(loaded);
                 GameObject first = ChunkloadedList[0];
