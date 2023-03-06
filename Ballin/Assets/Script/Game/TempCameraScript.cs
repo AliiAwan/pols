@@ -15,6 +15,6 @@ public class TempCameraScript : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        this.transform.position = new Vector3(player.transform.position.x,player.transform.position.y+6, player.transform.position.z-10);
+        this.transform.position = new Vector3(player.transform.position.x,player.transform.position.y+6, player.transform.position.z-7);
     }
 }
