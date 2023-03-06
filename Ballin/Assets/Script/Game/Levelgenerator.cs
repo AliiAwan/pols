@@ -27,13 +27,13 @@ public class Levelgenerator : MonoBehaviour
             GameObject selected = Chunks[Random.Range(0, Chunks.Count)];
             GameObject loaded = Instantiate(selected);
 			GameObject loadedbarrier = Instantiate(Tod);
-			loaded.transform.position = new Vector3(0, i * shifty, i * shiftz);
+			loaded.transform.position = new Vector3(0, i * shifty + 1, i * shiftz);
 			loadedbarrier.transform.position = new Vector3(0, i * shifty - 3, i * shiftz + 3);
 			ChunkloadedList.Add(loaded);
 			ChunkloadedList.Add(loadedbarrier);
 		}
 
-		lastenddisy = startamount * shifty;
+		lastenddisy = startamount * shifty +2;
         lastenddisz = startamount*shiftz;
     }
 
@@ -43,13 +43,15 @@ public class Levelgenerator : MonoBehaviour
 		var number = ChunkloadedList.Count;
 		if (lastenddisz - Player.transform.position.z < maxdistance)
         {
-		    shifty = -37.4f - Mathf.Round(GlobalManager.Speed / 2) * 1;
+		    shifty = -37.4f - Mathf.Round(GlobalManager.Speed / 2.4f) * 1;
 		    shiftz = 90.15f+  Mathf.Round(GlobalManager.Speed / 2) * 3f;
             var f = Random.Range(0, Chunks.Count);
-			if ((ChunkloadedList[number-1].gameObject.name.Contains("WrenchRamp_Segment")))
+			Debug.Log((ChunkloadedList[number - 2].gameObject.name));
+
+            if ((ChunkloadedList[number-2].gameObject.name.Contains("WrenchRamp_Segment")))
 			{
-			    shifty -= Mathf.Round(GlobalManager.Speed / 2f) * 2 ;
-			    shiftz += Mathf.Round(GlobalManager.Speed / 4f) * 10;
+			    shifty -= Mathf.Round(GlobalManager.Speed / 2.2f) * 1;
+			    shiftz += Mathf.Round(GlobalManager.Speed / 4f) * 8;
 			}
 			GameObject selected = Chunks[f];
 			selected.transform.position = new Vector3(0, lastenddisy + shifty, lastenddisz + shiftz);

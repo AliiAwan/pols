@@ -61,7 +61,7 @@ public class BallMovement : MonoBehaviour
 		}
 		else
 		{
-			Invoke("loadDeathScreen", 2f);
+			Invoke("loadDeathScreen",0 );
 			rb.constraints = RigidbodyConstraints.FreezeAll;
 			Destroy(this.gameObject.GetComponent<MeshRenderer>());
 
@@ -81,7 +81,21 @@ public class BallMovement : MonoBehaviour
     private void loadDeathScreen()
     {
         Canvas.SetActive(true);
+        FadeIn();
         GlobalManager.Pausable = false;
         Debug.Log("Death Screen loaded");
     }
-}
+
+    public IEnumerator FadeIn()
+    {
+        while (Canvas.GetComponent<Renderer>().material.color.a > 0)
+        {
+            Color objectcolor = Canvas.GetComponent<Renderer>().material.color;
+            float fadeAmount = objectcolor.a + (0.1f * Time.deltaTime);
+
+            objectcolor = new Color(objectcolor.r, objectcolor.g, objectcolor.b, fadeAmount);
+            Canvas.GetComponent<Renderer>().material.color = objectcolor;
+            yield return null;
+        }
+    }
+    }
