@@ -1377,7 +1377,7 @@ MonoBehaviour:
   Player: {fileID: 1547152324}
   Tod: {fileID: 1302617524}
   Chunks:
-  - {fileID: 2767995023347049088, guid: b4f73605c57aae8498fde31b1376388c, type: 3}
+  - {fileID: 2767995023347049088, guid: 09c278fa17f7df34bae92ca65cce61e2, type: 3}
   - {fileID: 2767995023347049088, guid: 55b9fddea148f3b41a6da81aa343921f, type: 3}
   - {fileID: 2767995023347049088, guid: 433298e99282f70489829b8185eff200, type: 3}
   - {fileID: 2767995023347049088, guid: d922a16838fd44e4d98d3dba3b7447fb, type: 3}
@@ -1878,7 +1878,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1226772441
 MonoBehaviour:
   m_ObjectHideFlags: 0
