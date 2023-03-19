@@ -59,6 +59,11 @@ public class BallMovement : MonoBehaviour
 		{
 			rb.velocity *= boostamount;
 		}
+        else if(other.gameObject.name.Contains("Coin"))
+        {
+            GlobalManager.Coins++;
+            Destroy(other.gameObject);
+        }
 		else
 		{
 			Invoke("loadDeathScreen",0 );
@@ -67,11 +72,11 @@ public class BallMovement : MonoBehaviour
 
 			//save data of run
 			GlobalManager.AllCoins += GlobalManager.Coins;
+			GlobalManager.Runs.Add(new RunTemplate() { Distance = GlobalManager.Distance , CoinsCollected= GlobalManager.Coins});
 			GlobalManager.Coins = 0;
 			SaveSystem.SavePlayer();
             if (!GlobalManager.Death)
 			{
-				GlobalManager.Runs.Add(new RunTemplate() { Distance = GlobalManager.Distance });
 				GlobalManager.Death = true;
 			}
 			Debug.Log("Entered death");
