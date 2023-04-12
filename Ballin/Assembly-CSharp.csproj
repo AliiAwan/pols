@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Game\Levelgenerator.cs" />
     <Compile Include="Assets\Script\Game\MoveAutomatically.cs" />
+    <Compile Include="Assets\Script\menus\Runsdisplayer.cs" />
     <Compile Include="Assets\Script\TitleScreen\OpenScene.cs" />
     <Compile Include="Assets\Script\Settings\ReturnToMenu.cs" />
     <Compile Include="Assets\Script\SaveSystem\PlayerTemplate.cs" />
@@ -72,7 +73,6 @@
     <Compile Include="Assets\Script\Game\BallMovement.cs" />
     <Compile Include="Assets\Script\Game\TempCameraScript.cs" />
     <Compile Include="Assets\Script\Game\PauseMenuScript.cs" />
-    <Compile Include="Assets\Script\menus\Runsdisplayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
