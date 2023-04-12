@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\shop\Scriptable Objects\ShopTemplate.cs" />
     <Compile Include="Assets\Script\Game\Levelgenerator.cs" />
     <Compile Include="Assets\Script\Game\MoveAutomatically.cs" />
     <Compile Include="Assets\Script\menus\Runsdisplayer.cs" />
@@ -65,17 +66,16 @@
     <Compile Include="Assets\Script\Settings\Resolutionchanger.cs" />
     <Compile Include="Assets\Script\TitleScreen\LoadPlayerData.cs" />
     <Compile Include="Assets\Script\menus\Buttons.cs" />
+    <Compile Include="Assets\Script\shop\Scriptable Objects\ShopManager.cs" />
     <Compile Include="Assets\Script\SaveSystem\SaveSystem.cs" />
     <Compile Include="Assets\Script\Game\GlobalManager.cs" />
+    <Compile Include="Assets\Script\shop\Scriptable Objects\ShopItemSO.cs" />
     <Compile Include="Assets\Script\menus\Statsdisplayer.cs" />
     <Compile Include="Assets\Script\Game\TextScript.cs" />
     <Compile Include="Assets\Script\SaveSystem\RunTemplate.cs" />
     <Compile Include="Assets\Script\Game\BallMovement.cs" />
     <Compile Include="Assets\Script\Game\TempCameraScript.cs" />
     <Compile Include="Assets\Script\Game\PauseMenuScript.cs" />
-    <Compile Include="Assets\Script\shop\Scriptable Objects\ShopManager.cs" />
-    <Compile Include="Assets\Script\shop\Scriptable Objects\ShopItemSO.cs" />
-    <Compile Include="Assets\Script\shop\Scriptable Objects\ShopTemplate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

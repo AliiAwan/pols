@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class SaveSystem
 {
-    
+
 
 
     public static void SavePlayer()
@@ -35,7 +35,11 @@ public class SaveSystem
             GlobalManager.AllCoins = data.AllCoins;
             GlobalManager.Runs = data.Runs;
 
-           // GlobalManager.Runs.ForEach(x => Debug.Log("Loaded run:"+x.Distance));
+            GlobalManager.UnlockedMaterials = data.UnlockedMaterials;
+            GlobalManager.UnlockedPlayers = data.UnlockedPlayers;
+            GlobalManager.UnlockedSkyboxes = data.UnlockedSkyboxes;
+
+            // GlobalManager.Runs.ForEach(x => Debug.Log("Loaded run:"+x.Distance));
 
             stream.Close();
         }
@@ -49,6 +53,11 @@ public class SaveSystem
     {
         GlobalManager.AllCoins = 0;
         GlobalManager.Runs.Clear();
+
+        GlobalManager.UnlockedMaterials.Clear();
+        GlobalManager.UnlockedPlayers.Clear();
+        GlobalManager.UnlockedSkyboxes.Clear();
+
         SavePlayer();
         LoadPlayer();
     }
