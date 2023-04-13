@@ -30,4 +30,9 @@ public class GlobalManager
     public static List<string> UnlockedMaterials { get; set; } = new List<string>();
     public static List<string> UnlockedPlayers { get; set; } = new List<string>();
     public static List<string> UnlockedSkyboxes { get; set; } = new List<string>();
+
+    //Current Selected Items
+    public static Material CurrMaterial { get; set; }
+    public static Material CurrPlayer { get; set; }
+    public static Material CurrSkybox { get; set; }
 }
