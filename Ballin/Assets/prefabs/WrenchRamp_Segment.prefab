@@ -91,6 +91,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 994350aaadaa58745b27b8e7944c1ccd, type: 2}
+    - target: {fileID: -516098083770646512, guid: 4d60579233d71e34ea948d3ff788229a, type: 3}
+      propertyPath: m_Name
+      value: Cube
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4d60579233d71e34ea948d3ff788229a, type: 3}
       propertyPath: m_Name
       value: segment_wrench_ramp

@@ -25,6 +25,7 @@ public class Levelgenerator : MonoBehaviour
         for (int i = 1; i <=startamount; i++)
         {
             GameObject selected = Chunks[Random.Range(0, Chunks.Count)];
+            selected.gameObject.transform.GetChild(0).GetChild(0).GetComponent<MeshRenderer>().material = GlobalManager.CurrMaterial;
             GameObject loaded = Instantiate(selected);
 			GameObject loadedbarrier = Instantiate(Tod);
 			loaded.transform.position = new Vector3(0, i * shifty + 1, i * shiftz);
@@ -55,6 +56,7 @@ public class Levelgenerator : MonoBehaviour
 			}
 			GameObject selected = Chunks[f];
 			selected.transform.position = new Vector3(0, lastenddisy + shifty, lastenddisz + shiftz);
+			selected.gameObject.transform.GetChild(0).GetChild(0).GetComponent<MeshRenderer>().material = GlobalManager.CurrMaterial;
             GameObject loaded = Instantiate(selected);
             ChunkloadedList.Add(loaded);
 
