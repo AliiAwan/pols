@@ -1182,6 +1182,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ab463b567ca4534087f417ead31ac6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DefaultMaterial: {fileID: 11400000, guid: 88d0202a93f14284582beb7fb268a690, type: 2}
+  DefaultPlayer: {fileID: 11400000, guid: 38319fffe18530d439686252e7fead31, type: 2}
+  DefaultSkyBox: {fileID: 11400000, guid: a34cb3c0c3a9c88449706dba71b6fd61, type: 2}
 --- !u!1 &1685955168
 GameObject:
   m_ObjectHideFlags: 0

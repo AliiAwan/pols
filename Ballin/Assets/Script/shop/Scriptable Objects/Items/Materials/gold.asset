@@ -15,3 +15,4 @@ MonoBehaviour:
   name: gold
   description: shiny gold yes
   coincost: 10
+  material: {fileID: 2100000, guid: f88b54017e3c32445a2f322dd92f4d35, type: 2}

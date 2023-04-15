@@ -10,6 +10,10 @@ public class ShopManager : MonoBehaviour
 {
     public TMP_Text CoinsDisplay;
 
+    public GameObject PreviewMaterial;
+    public GameObject PreviewPlayer;
+
+
     public ShopItemSO[] materialitemsSO;
     public ShopTemplate[] materialpanels;
     public GameObject[] materialpanelsGO;
@@ -34,8 +38,7 @@ public class ShopManager : MonoBehaviour
     {
         SaveSystem.LoadPlayer();
 
-        GlobalManager.AllCoins = 10000;
-
+        //GlobalManager.AllCoins = 10000;
 
         for (int i = 0; i < materialitemsSO.Length; i++)
             materialpanelsGO[i].SetActive(true);
@@ -50,6 +53,8 @@ public class ShopManager : MonoBehaviour
         LoadItems();
         CheckPurchaseable();
         CheckSelectable();
+        PreviewMaterial.GetComponent<MeshRenderer>().material = GlobalManager.CurrMaterial;
+        PreviewPlayer.GetComponent<MeshRenderer>().material = GlobalManager.CurrPlayer;
     }
 
     public void LoadItems()
@@ -111,21 +116,30 @@ public class ShopManager : MonoBehaviour
         for (int i = 0; i < materialitemsSO.Length; i++)
         {
             if (GlobalManager.UnlockedMaterials.Any(x => x == materialitemsSO[i].name))
+            {
                 SelectableMaterialBtns[i].gameObject.SetActive(true);
+                myPurchaseMaterialBtns[i].interactable = false;
+            }
             else
                 SelectableMaterialBtns[i].gameObject.SetActive(false);
         }
         for (int i = 0; i < playeritemsSO.Length; i++)
         {
             if (GlobalManager.UnlockedPlayers.Any(x => x == playeritemsSO[i].name))
+            {
                 SelectablePlayerBtns[i].gameObject.SetActive(true);
+                myPurchasePlayerBtns[i].interactable = false;
+            }
             else
                 SelectablePlayerBtns[i].gameObject.SetActive(false);
         }
         for (int i = 0; i < skyboxitemsSO.Length; i++)
         {
             if (GlobalManager.UnlockedSkyboxes.Any(x => x == skyboxitemsSO[i].name))
+            {
                 SelectableSkyboxBtns[i].gameObject.SetActive(true);
+                myPurchaseSkyboxBtns[i].interactable = false;
+            }
             else
                 SelectableSkyboxBtns[i].gameObject.SetActive(false);
         }
@@ -140,6 +154,7 @@ public class ShopManager : MonoBehaviour
             CheckPurchaseable();
             //unlock logic here
             GlobalManager.UnlockedMaterials.Add(materialitemsSO[btnNo].name);
+            GlobalManager.CurrMaterial = materialitemsSO[btnNo].material;
             CheckSelectable();
             SaveSystem.SavePlayer();
             SaveSystem.LoadPlayer();
@@ -155,6 +170,7 @@ public class ShopManager : MonoBehaviour
             CheckPurchaseable();
             //unlock logic here
             GlobalManager.UnlockedPlayers.Add(playeritemsSO[btnNo].name);
+            GlobalManager.CurrPlayer = playeritemsSO[btnNo].material;
             CheckSelectable();
             SaveSystem.SavePlayer();
             SaveSystem.LoadPlayer();
@@ -170,11 +186,31 @@ public class ShopManager : MonoBehaviour
             CheckPurchaseable();
             //unlock logic here
             GlobalManager.UnlockedSkyboxes.Add(skyboxitemsSO[btnNo].name);
+            GlobalManager.CurrSkybox = skyboxitemsSO[btnNo].material;
             CheckSelectable();
             SaveSystem.SavePlayer();
             SaveSystem.LoadPlayer();
         }
     }
+
+    public void SelectMaterialItem(int btnNo)
+    {
+        GlobalManager.CurrMaterial = materialitemsSO[btnNo].material;
+        PreviewMaterial.GetComponent<MeshRenderer>().material = GlobalManager.CurrMaterial;
+        //Select button grün machen um selected darzustellen
+    }
+    public void SelectPlayerItem(int btnNo)
+    {
+        GlobalManager.CurrPlayer = playeritemsSO[btnNo].material;
+        PreviewPlayer.GetComponent<MeshRenderer>().material = GlobalManager.CurrPlayer;
+        //Select button grün machen um selected darzustellen
+    }
+    public void SelectSkyBoxItem(int btnNo)
+    {
+        GlobalManager.CurrSkybox = skyboxitemsSO[btnNo].material;
+        //Select button grün machen um selected darzustellen
+    }
+
 
     // Update is called once per frame
     void Update()

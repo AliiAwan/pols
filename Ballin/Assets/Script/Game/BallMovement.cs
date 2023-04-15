@@ -61,7 +61,7 @@ public class BallMovement : MonoBehaviour
 		}
         else if(other.gameObject.name.Contains("Coin"))
         {
-            GlobalManager.Coins++;
+            GlobalManager.Coins+=100;
             Destroy(other.gameObject);
         }
 		else

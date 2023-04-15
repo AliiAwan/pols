@@ -76,6 +76,7 @@
     <Compile Include="Assets\Script\Game\BallMovement.cs" />
     <Compile Include="Assets\Script\Game\TempCameraScript.cs" />
     <Compile Include="Assets\Script\Game\PauseMenuScript.cs" />
+    <Compile Include="Assets\Script\Game\LoadShopSelection.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

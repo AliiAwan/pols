@@ -8,4 +8,5 @@ public class ShopItemSO : ScriptableObject
     public string name;
     public string description;
     public int coincost;
+    public Material material;
 }
