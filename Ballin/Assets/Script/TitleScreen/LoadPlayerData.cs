@@ -36,5 +36,18 @@ public class LoadPlayerData : MonoBehaviour
         {
             GlobalManager.CurrPlayer = DefaultPlayer.material;
         }
+
+        if (GlobalManager.UnlockedSkyboxes.Count == 0)
+        {
+            //noch nichts freigeschalten => default automatisch freischalten und selecten
+            GlobalManager.UnlockedSkyboxes.Add(DefaultSkyBox.name);
+            GlobalManager.CurrSkybox = DefaultSkyBox.material;
+        }
+        else if (GlobalManager.CurrSkybox == null)
+        {
+            GlobalManager.CurrSkybox = DefaultSkyBox.material;
+        }
+
+        RenderSettings.skybox = GlobalManager.CurrSkybox;
     }
 }

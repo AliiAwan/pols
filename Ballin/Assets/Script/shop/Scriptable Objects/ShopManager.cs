@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,7 +13,6 @@ public class ShopManager : MonoBehaviour
 
     public GameObject PreviewMaterial;
     public GameObject PreviewPlayer;
-
 
     public ShopItemSO[] materialitemsSO;
     public ShopTemplate[] materialpanels;
@@ -32,10 +32,14 @@ public class ShopManager : MonoBehaviour
     public Button[] myPurchaseSkyboxBtns;
     public Button[] SelectableSkyboxBtns;
 
+    AudioSource audioData;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        audioData = GetComponent<AudioSource>();
+
         SaveSystem.LoadPlayer();
 
         //GlobalManager.AllCoins = 10000;
@@ -149,6 +153,7 @@ public class ShopManager : MonoBehaviour
     {
         if (GlobalManager.AllCoins >= materialitemsSO[btnNo].coincost)
         {
+            audioData.Play();
             GlobalManager.AllCoins -= materialitemsSO[btnNo].coincost;
             CoinsDisplay.text = "Coins:" + GlobalManager.AllCoins.ToString();
             CheckPurchaseable();
@@ -165,6 +170,7 @@ public class ShopManager : MonoBehaviour
     {
         if (GlobalManager.AllCoins >= playeritemsSO[btnNo].coincost)
         {
+            audioData.Play();
             GlobalManager.AllCoins -= playeritemsSO[btnNo].coincost;
             CoinsDisplay.text = "Coins:" + GlobalManager.AllCoins.ToString();
             CheckPurchaseable();
@@ -181,6 +187,7 @@ public class ShopManager : MonoBehaviour
     {
         if (GlobalManager.AllCoins >= skyboxitemsSO[btnNo].coincost)
         {
+            audioData.Play();
             GlobalManager.AllCoins -= skyboxitemsSO[btnNo].coincost;
             CoinsDisplay.text = "Coins:" + GlobalManager.AllCoins.ToString();
             CheckPurchaseable();
@@ -195,26 +202,24 @@ public class ShopManager : MonoBehaviour
 
     public void SelectMaterialItem(int btnNo)
     {
+        audioData.Play();
         GlobalManager.CurrMaterial = materialitemsSO[btnNo].material;
         PreviewMaterial.GetComponent<MeshRenderer>().material = GlobalManager.CurrMaterial;
         //Select button grün machen um selected darzustellen
     }
     public void SelectPlayerItem(int btnNo)
     {
+        audioData.Play();
         GlobalManager.CurrPlayer = playeritemsSO[btnNo].material;
         PreviewPlayer.GetComponent<MeshRenderer>().material = GlobalManager.CurrPlayer;
         //Select button grün machen um selected darzustellen
     }
     public void SelectSkyBoxItem(int btnNo)
     {
+        audioData.Play();
         GlobalManager.CurrSkybox = skyboxitemsSO[btnNo].material;
+        RenderSettings.skybox = GlobalManager.CurrSkybox;
         //Select button grün machen um selected darzustellen
     }
 
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }
