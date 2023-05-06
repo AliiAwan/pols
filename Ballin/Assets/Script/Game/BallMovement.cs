@@ -25,6 +25,8 @@ public class BallMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        RenderSettings.skybox = GlobalManager.CurrSkybox;
+
         GlobalManager.Death = false;
         rb = GetComponent<Rigidbody>();
     }
