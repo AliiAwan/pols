@@ -13,6 +13,7 @@ public class Runsdisplayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        RenderSettings.skybox = GlobalManager.CurrSkybox;
         foreach (RunTemplate r in GlobalManager.Runs)
         {
             GameObject runobject = new GameObject();

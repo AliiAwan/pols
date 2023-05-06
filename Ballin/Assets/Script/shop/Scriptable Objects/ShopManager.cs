@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -217,6 +218,7 @@ public class ShopManager : MonoBehaviour
     {
         audioData.Play();
         GlobalManager.CurrSkybox = skyboxitemsSO[btnNo].material;
+        RenderSettings.skybox = GlobalManager.CurrSkybox;
         //Select button grün machen um selected darzustellen
     }
 

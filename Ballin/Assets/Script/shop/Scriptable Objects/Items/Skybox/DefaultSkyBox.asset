@@ -15,3 +15,4 @@ MonoBehaviour:
   name: Default
   description: ist halt das Default teil ye
   coincost: 0
+  material: {fileID: 2100000, guid: 7532f699e134c3547b373487f6b4d57f, type: 2}
