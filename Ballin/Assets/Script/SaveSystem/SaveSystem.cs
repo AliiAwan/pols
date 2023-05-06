@@ -39,9 +39,9 @@ public class SaveSystem
             GlobalManager.Music = data.music;
             GlobalManager.SFX = data.sfx;
 
-            GlobalManager.CurrMaterial = data.currMaterial;
-            GlobalManager.CurrPlayer = data.currPlayer;
-            GlobalManager.CurrSkybox = data.currSkybox;
+            //GlobalManager.CurrMaterial = data.currMaterial;
+            //GlobalManager.CurrPlayer = data.currPlayer;
+            //GlobalManager.CurrSkybox = data.currSkybox;
 
             GlobalManager.UnlockedMaterials = data.UnlockedMaterials;
             GlobalManager.UnlockedPlayers = data.UnlockedPlayers;

@@ -16,9 +16,9 @@ public class PlayerTemplate
     public float music;
     public float sfx;
 
-    public Material currMaterial;
-    public Material currPlayer;
-    public Material currSkybox;
+    //public Material currMaterial;
+    //public Material currPlayer;
+    //public Material currSkybox;
     public PlayerTemplate()
     {
         this.AllCoins = GlobalManager.AllCoins;
@@ -28,9 +28,9 @@ public class PlayerTemplate
         this.music = GlobalManager.Music;
         this.sfx = GlobalManager.SFX;
 
-        this.currMaterial = GlobalManager.CurrMaterial;
-        this.currPlayer = GlobalManager.CurrPlayer;
-        this.currSkybox = GlobalManager.CurrSkybox;
+        //this.currMaterial = GlobalManager.CurrMaterial;
+        //this.currPlayer = GlobalManager.CurrPlayer;
+        //this.currSkybox = GlobalManager.CurrSkybox;
 
         this.UnlockedMaterials = GlobalManager.UnlockedMaterials;
         this.UnlockedPlayers = GlobalManager.UnlockedPlayers;

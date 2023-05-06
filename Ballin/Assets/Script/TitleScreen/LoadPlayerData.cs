@@ -14,8 +14,8 @@ public class LoadPlayerData : MonoBehaviour
     void Start()
     {
         //Die zwei Zeilen sind nur wenn man was neues dazu gibts
-        SaveSystem.ClearStats();
-        SaveSystem.SavePlayer();
+        //SaveSystem.ClearStats();
+        //SaveSystem.SavePlayer();
 
         SaveSystem.LoadPlayer();
         

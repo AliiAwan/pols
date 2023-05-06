@@ -20,32 +20,32 @@ public class VolumeUI : MonoBehaviour
         sfxSlider.value = GlobalManager.SFX;
         musicSlider.value = GlobalManager.Music;
     }
-
+    
     void Start()
     {
-        mixer.SetFloat("MasterVolume", GlobalManager.Master);
-        mixer.SetFloat("SFXVolume", GlobalManager.SFX);
-        mixer.SetFloat("MusicVolume", GlobalManager.Music);
+        mixer.SetFloat("Master", GlobalManager.Master);
+        mixer.SetFloat("SFX", GlobalManager.SFX);
+        mixer.SetFloat("Music", GlobalManager.Music);
         SetSliders();
     }
 
     public void UpdateMasterVolume()
     {
-        mixer.SetFloat("MasterVolume", GlobalManager.Master);
+        mixer.SetFloat("Master", GlobalManager.Master);
         GlobalManager.Master = masterSlider.value;
         SaveSystem.SavePlayer();
     }
     // called when we update the sfx slider
     public void UpdateSFXVolume()
     {
-        mixer.SetFloat("SFXVolume", GlobalManager.SFX);
+        mixer.SetFloat("SFX", GlobalManager.SFX);
         GlobalManager.SFX = sfxSlider.value;
         SaveSystem.SavePlayer();
     }
     // called when we update the music slider
     public void UpdateMusicVolume()
     {
-        mixer.SetFloat("MusicVolume", GlobalManager.Music);
+        mixer.SetFloat("Music", GlobalManager.Music);
         GlobalManager.Music = musicSlider.value;
         SaveSystem.SavePlayer();
     }

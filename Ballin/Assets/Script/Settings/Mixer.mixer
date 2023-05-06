@@ -38,6 +38,26 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!244 &-699266811915719438
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: ae7ec921fbec22248b7f279fa6a5dd04
+  m_EffectName: Normalize
+  m_MixLevel: 8769946d313a57443b428b39eefd05c5
+  m_Parameters:
+  - m_ParameterName: Fade in time
+    m_GUID: ace1d0411a070d94aacba5b7d62135a5
+  - m_ParameterName: Lowest volume
+    m_GUID: 39fc721fe00c7774cb2b569053cb9021
+  - m_ParameterName: Maximum amp
+    m_GUID: 0e60b2a40f3fdad4eaefe865f0598d25
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!241 &24100000
 AudioMixerController:
   m_ObjectHideFlags: 0
@@ -51,9 +71,15 @@ AudioMixerController:
   - {fileID: 24500006}
   m_StartSnapshot: {fileID: 24500006}
   m_SuspendThreshold: -80
-  m_EnableSuspend: 1
+  m_EnableSuspend: 0
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: 5d5bfb9accb034b44951ba887be0254d
+    name: Master
+  - guid: 55e8918769cf2bb4bae2d59e4f3d0e3b
+    name: Music
+  - guid: e013e15f2a22d4b4caecae8728d4c1b1
+    name: SFX
   m_AudioMixerGroupViews:
   - guids:
     - 271e099ff3f154b44a24aa85521d6120
