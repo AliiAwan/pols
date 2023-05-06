@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0289cf12308113440b97484ad2ff2545, type: 3}
   m_Name: Night
   m_EditorClassIdentifier: 
-  name: 
-  image: {fileID: 0}
-  coincost: 0
+  name: Night
+  image: {fileID: 21300000, guid: 47affb628af1d2049965a114a4990ab6, type: 3}
+  coincost: 50
   material: {fileID: 0}

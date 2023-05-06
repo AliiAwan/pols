@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0289cf12308113440b97484ad2ff2545, type: 3}
-  m_Name: Slope
+  m_Name: Wireframe
   m_EditorClassIdentifier: 
-  name: 
-  image: {fileID: 0}
-  coincost: 0
-  material: {fileID: 0}
+  name: the Wire
+  image: {fileID: 21300000, guid: aba6ca82624328644bb536ea2b6776e5, type: 3}
+  coincost: 20
+  material: {fileID: 15303, guid: 0000000000000000f000000000000000, type: 0}

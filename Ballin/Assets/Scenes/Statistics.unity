@@ -781,7 +781,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 244085105}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99999994
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -881,6 +881,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42738ed2b8703a1449575e84db4d4e95, type: 3}
+--- !u!1 &497828976 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8975219107405796274, guid: 42738ed2b8703a1449575e84db4d4e95, type: 3}
+  m_PrefabInstance: {fileID: 497828975}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &554107606
 GameObject:
   m_ObjectHideFlags: 0
@@ -1338,6 +1343,7 @@ GameObject:
   - component: {fileID: 1113481313}
   - component: {fileID: 1113481312}
   - component: {fileID: 1113481315}
+  - component: {fileID: 1113481316}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1471,6 +1477,22 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &1113481316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113481311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ab463b567ca4534087f417ead31ac6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultMaterial: {fileID: 11400000, guid: 88d0202a93f14284582beb7fb268a690, type: 2}
+  DefaultPlayer: {fileID: 11400000, guid: 38319fffe18530d439686252e7fead31, type: 2}
+  DefaultSkyBox: {fileID: 11400000, guid: a34cb3c0c3a9c88449706dba71b6fd61, type: 2}
+  startSegment: {fileID: 497828976}
 --- !u!1 &1285951654
 GameObject:
   m_ObjectHideFlags: 0

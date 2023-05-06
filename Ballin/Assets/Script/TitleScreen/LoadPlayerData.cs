@@ -8,7 +8,7 @@ public class LoadPlayerData : MonoBehaviour
     public ShopItemSO DefaultPlayer;
     public ShopItemSO DefaultSkyBox;
 
-
+    public GameObject startSegment;
 
     // Start is called before the first frame update
     void Start()
@@ -47,7 +47,7 @@ public class LoadPlayerData : MonoBehaviour
         {
             GlobalManager.CurrSkybox = DefaultSkyBox.material;
         }
-
+        startSegment.GetComponent<MeshRenderer>().material = GlobalManager.CurrMaterial;
         RenderSettings.skybox = GlobalManager.CurrSkybox;
     }
 }

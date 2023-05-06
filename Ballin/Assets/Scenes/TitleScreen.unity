@@ -1001,6 +1001,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42738ed2b8703a1449575e84db4d4e95, type: 3}
+--- !u!1 &1311813139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8975219107405796274, guid: 42738ed2b8703a1449575e84db4d4e95, type: 3}
+  m_PrefabInstance: {fileID: 1311813138}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1386256734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1235,6 +1240,7 @@ MonoBehaviour:
   DefaultMaterial: {fileID: 11400000, guid: 88d0202a93f14284582beb7fb268a690, type: 2}
   DefaultPlayer: {fileID: 11400000, guid: 38319fffe18530d439686252e7fead31, type: 2}
   DefaultSkyBox: {fileID: 11400000, guid: a34cb3c0c3a9c88449706dba71b6fd61, type: 2}
+  startSegment: {fileID: 1311813139}
 --- !u!114 &1548400616
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0289cf12308113440b97484ad2ff2545, type: 3}
-  m_Name: GreenSky
+  m_Name: DefaultPlayer
   m_EditorClassIdentifier: 
-  name: 
-  image: {fileID: 0}
-  coincost: 10
-  material: {fileID: 0}
+  name: Default
+  image: {fileID: 21300000, guid: a5c12f39415652540a853cc46a75ae81, type: 3}
+  coincost: 0
+  material: {fileID: 2100000, guid: 7f0f389c21a3dff40b48a4a529d778da, type: 2}

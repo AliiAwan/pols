@@ -1556,6 +1556,7 @@ MonoBehaviour:
   maxdistance: 150
   shifty: -37.4
   shiftz: 90.15
+  startsegment: {fileID: 1531074626}
 --- !u!4 &773311983
 Transform:
   m_ObjectHideFlags: 0
@@ -2531,6 +2532,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 79f64ed6f5d6d374d91c3a0af4070258, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42738ed2b8703a1449575e84db4d4e95, type: 3}
+--- !u!1 &1531074626 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8975219107405796274, guid: 42738ed2b8703a1449575e84db4d4e95, type: 3}
+  m_PrefabInstance: {fileID: 1531074625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1539340629
 GameObject:
   m_ObjectHideFlags: 0

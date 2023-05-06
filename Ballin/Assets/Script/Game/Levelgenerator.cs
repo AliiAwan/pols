@@ -18,9 +18,13 @@ public class Levelgenerator : MonoBehaviour
     private float lastenddisz;
     private float lastenddisy;
 
+	public GameObject startsegment;
+
     // Start is called before the first frame update
     void Start()
     {
+		startsegment.GetComponent<MeshRenderer>().material = GlobalManager.CurrMaterial;
+
         int startamount = 3;
         for (int i = 1; i <=startamount; i++)
         {

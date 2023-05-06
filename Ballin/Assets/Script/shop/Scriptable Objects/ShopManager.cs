@@ -62,6 +62,8 @@ public class ShopManager : MonoBehaviour
         CheckSelectable();
         PreviewMaterial.GetComponent<MeshRenderer>().material = GlobalManager.CurrMaterial;
         PreviewPlayer.GetComponent<MeshRenderer>().material = GlobalManager.CurrPlayer;
+
+        RenderSettings.skybox = GlobalManager.CurrSkybox;
     }
 
     public void LoadItems()

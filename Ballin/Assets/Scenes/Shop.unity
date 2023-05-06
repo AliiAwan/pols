@@ -2879,9 +2879,9 @@ MonoBehaviour:
   PreviewPlayer: {fileID: 520307718}
   materialitemsSO:
   - {fileID: 11400000, guid: 88d0202a93f14284582beb7fb268a690, type: 2}
-  - {fileID: 11400000, guid: 02dffa189ff6cf54d92002d3160f4a77, type: 2}
-  - {fileID: 11400000, guid: 1632af47b08e3294d997e4944d0cea09, type: 2}
-  - {fileID: 11400000, guid: 1240eb57539319e47adcaf4a7c4473a8, type: 2}
+  - {fileID: 11400000, guid: cca269825b3a9d64c8db2ab9cbaa1e87, type: 2}
+  - {fileID: 11400000, guid: f333c1dbe4a59bf41abc4758850e0ebd, type: 2}
+  - {fileID: 11400000, guid: 040711f962926204faf7407a4680b187, type: 2}
   materialpanels:
   - {fileID: 848795397}
   - {fileID: 1843337814}
@@ -2944,9 +2944,9 @@ MonoBehaviour:
   - {fileID: 213906783}
   playeritemsSO:
   - {fileID: 11400000, guid: 38319fffe18530d439686252e7fead31, type: 2}
-  - {fileID: 11400000, guid: a21e315ed609af94c952d9a2f8a24c11, type: 2}
-  - {fileID: 11400000, guid: 227970fca6176584993dba616d61ff89, type: 2}
   - {fileID: 11400000, guid: 1240eb57539319e47adcaf4a7c4473a8, type: 2}
+  - {fileID: 11400000, guid: 4a1dd837f2904e74b85c789bed6a3f09, type: 2}
+  - {fileID: 11400000, guid: 2d9ebede08a984f4d858803964b7e3c7, type: 2}
   playerpanels:
   - {fileID: 138002752}
   - {fileID: 159965111}
@@ -3009,9 +3009,9 @@ MonoBehaviour:
   - {fileID: 235212092}
   skyboxitemsSO:
   - {fileID: 11400000, guid: a34cb3c0c3a9c88449706dba71b6fd61, type: 2}
-  - {fileID: 11400000, guid: 6079694a681487944ad3199c5eed91bf, type: 2}
-  - {fileID: 11400000, guid: c3aaa691926388f48bde62e2bb20c1d6, type: 2}
-  - {fileID: 11400000, guid: 84fd196882bcacd45aa538bdab234be8, type: 2}
+  - {fileID: 11400000, guid: 615de5337911051429223013da7f9265, type: 2}
+  - {fileID: 11400000, guid: 49b36e8cda1b8b340b5a0c3e072588ad, type: 2}
+  - {fileID: 11400000, guid: 23dca9669447799499b94b111fd354fa, type: 2}
   skyboxpanels:
   - {fileID: 279098228}
   - {fileID: 1936220179}
