@@ -12,11 +12,25 @@ public class PlayerTemplate
     public List<string> UnlockedPlayers;
     public List<string> UnlockedSkyboxes;
 
+    public float master;
+    public float music;
+    public float sfx;
 
+    public Material currMaterial;
+    public Material currPlayer;
+    public Material currSkybox;
     public PlayerTemplate()
     {
         this.AllCoins = GlobalManager.AllCoins;
         this.Runs = GlobalManager.Runs;
+
+        this.master = GlobalManager.Master;
+        this.music = GlobalManager.Music;
+        this.sfx = GlobalManager.SFX;
+
+        this.currMaterial = GlobalManager.CurrMaterial;
+        this.currPlayer = GlobalManager.CurrPlayer;
+        this.currSkybox = GlobalManager.CurrSkybox;
 
         this.UnlockedMaterials = GlobalManager.UnlockedMaterials;
         this.UnlockedPlayers = GlobalManager.UnlockedPlayers;

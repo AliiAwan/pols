@@ -13,7 +13,12 @@ public class LoadPlayerData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Die zwei Zeilen sind nur wenn man was neues dazu gibts
+        SaveSystem.ClearStats();
+        SaveSystem.SavePlayer();
+
         SaveSystem.LoadPlayer();
+        
 
         if(GlobalManager.UnlockedMaterials.Count == 0)
         {

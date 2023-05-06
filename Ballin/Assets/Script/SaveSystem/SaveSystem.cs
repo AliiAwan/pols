@@ -35,6 +35,14 @@ public class SaveSystem
             GlobalManager.AllCoins = data.AllCoins;
             GlobalManager.Runs = data.Runs;
 
+            GlobalManager.Master = data.master;
+            GlobalManager.Music = data.music;
+            GlobalManager.SFX = data.sfx;
+
+            GlobalManager.CurrMaterial = data.currMaterial;
+            GlobalManager.CurrPlayer = data.currPlayer;
+            GlobalManager.CurrSkybox = data.currSkybox;
+
             GlobalManager.UnlockedMaterials = data.UnlockedMaterials;
             GlobalManager.UnlockedPlayers = data.UnlockedPlayers;
             GlobalManager.UnlockedSkyboxes = data.UnlockedSkyboxes;

@@ -11,6 +11,9 @@ public class GlobalManager
     public static float Speed { get; set; }
     public static float Distance { get; set; }
 
+    public static float Master { get; set; }
+    public static float Music { get; set; }
+    public static float SFX { get; set; }
     public static bool Pausable { get; set; }
     public static bool Death { get; set; }
 
