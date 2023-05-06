@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DefaultMaterial
   m_EditorClassIdentifier: 
   name: Default
-  description: ist halt das Default teil ye
+  image: {fileID: 21300000, guid: ce8c10337fd656b499f5a09eb1df0d9c, type: 3}
   coincost: 0
   material: {fileID: 2100000, guid: 8fe5d7a1c5a385f4eab0816937fb2798, type: 2}

@@ -17,18 +17,21 @@ public class ShopManager : MonoBehaviour
     public ShopItemSO[] materialitemsSO;
     public ShopTemplate[] materialpanels;
     public GameObject[] materialpanelsGO;
+    public Image[] materialpanelsImages;
     public Button[] myPurchaseMaterialBtns;
     public Button[] SelectableMaterialBtns;
 
     public ShopItemSO[] playeritemsSO;
     public ShopTemplate[] playerpanels;
     public GameObject[] playerpanelsGO;
+    public Image[] playerpanelsImages;
     public Button[] myPurchasePlayerBtns;
     public Button[] SelectablePlayerBtns;
 
     public ShopItemSO[] skyboxitemsSO;
     public ShopTemplate[] skyboxpanels;
     public GameObject[] skyboxpanelsGO;
+    public Image[] skyboxpanelsImages;
     public Button[] myPurchaseSkyboxBtns;
     public Button[] SelectableSkyboxBtns;
 
@@ -66,21 +69,21 @@ public class ShopManager : MonoBehaviour
         for (int i = 0; i < materialitemsSO.Length; i++)
         {
             materialpanels[i].nameText.text = materialitemsSO[i].name;
-            materialpanels[i].descriptionText.text = materialitemsSO[i].description;
+            materialpanelsImages[i].sprite = materialitemsSO[i].image;
             materialpanels[i].coincostText.text = materialitemsSO[i].coincost.ToString() + " Coins";
         }
 
         for (int i = 0; i < playeritemsSO.Length; i++)
         {
             playerpanels[i].nameText.text = playeritemsSO[i].name;
-            playerpanels[i].descriptionText.text = playeritemsSO[i].description;
+            playerpanelsImages[i].sprite = playeritemsSO[i].image;
             playerpanels[i].coincostText.text = playeritemsSO[i].coincost.ToString() + " Coins";
         }
 
         for (int i = 0; i < skyboxitemsSO.Length; i++)
         {
             skyboxpanels[i].nameText.text = skyboxitemsSO[i].name;
-            skyboxpanels[i].descriptionText.text = skyboxitemsSO[i].description;
+            skyboxpanelsImages[i].sprite = skyboxitemsSO[i].image;
             skyboxpanels[i].coincostText.text = skyboxitemsSO[i].coincost.ToString() + " Coins";
         }
     }
