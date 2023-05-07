@@ -31,22 +31,22 @@ public class VolumeUI : MonoBehaviour
 
     public void UpdateMasterVolume()
     {
-        mixer.SetFloat("Master", GlobalManager.Master);
         GlobalManager.Master = masterSlider.value;
+        mixer.SetFloat("Master", GlobalManager.Master);
         SaveSystem.SavePlayer();
     }
     // called when we update the sfx slider
     public void UpdateSFXVolume()
     {
-        mixer.SetFloat("SFX", GlobalManager.SFX);
         GlobalManager.SFX = sfxSlider.value;
+        mixer.SetFloat("SFX", GlobalManager.SFX);
         SaveSystem.SavePlayer();
     }
     // called when we update the music slider
     public void UpdateMusicVolume()
     {
-        mixer.SetFloat("Music", GlobalManager.Music);
         GlobalManager.Music = musicSlider.value;
+        mixer.SetFloat("Music", GlobalManager.Music);
         SaveSystem.SavePlayer();
     }
 

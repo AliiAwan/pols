@@ -68,15 +68,16 @@
     <Compile Include="Assets\Script\menus\Buttons.cs" />
     <Compile Include="Assets\Script\shop\Scriptable Objects\ShopManager.cs" />
     <Compile Include="Assets\Script\SaveSystem\SaveSystem.cs" />
+    <Compile Include="Assets\Script\Settings\VolumeUI.cs" />
     <Compile Include="Assets\Script\Game\GlobalManager.cs" />
     <Compile Include="Assets\Script\shop\Scriptable Objects\ShopItemSO.cs" />
     <Compile Include="Assets\Script\menus\Statsdisplayer.cs" />
+    <Compile Include="Assets\Script\Game\TextScript.cs" />
     <Compile Include="Assets\Script\SaveSystem\RunTemplate.cs" />
     <Compile Include="Assets\Script\Game\BallMovement.cs" />
     <Compile Include="Assets\Script\Game\TempCameraScript.cs" />
     <Compile Include="Assets\Script\Game\PauseMenuScript.cs" />
     <Compile Include="Assets\Script\Game\LoadShopSelection.cs" />
-    <Compile Include="Assets\Script\Settings\VolumeUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
