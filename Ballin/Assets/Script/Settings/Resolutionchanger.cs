@@ -20,19 +20,18 @@ public class Resolutionchanger : MonoBehaviour
 		GlobalManager.Res = resolutionIndex;
 		switch (resolutionIndex)
 		{
-			case 0:
+			case 1:
 				Screen.SetResolution(1920, 1080, GlobalManager.FullScreen);
 				break;
-			case 1:
+			case 2:
 				Screen.SetResolution(1280, 720, GlobalManager.FullScreen);
 				break;
-			case 2:
-				Screen.SetResolution(640, 360, GlobalManager.FullScreen);
+			case 0:
+				Screen.SetResolution(2560, 1440, GlobalManager.FullScreen);
 				break;
 		}
 		Debug.Log("Aktuelle Auflösung: " + Screen.width + "x" + Screen.height);
-		TMP_TextresolutionText.text = "Cur. Res.:"+ Screen.width + "x" + Screen.height;
-
+		resolutionDropdown.Hide();
 	}
 
 	public void ChangeWindowMode(int index)
@@ -46,7 +45,7 @@ public class Resolutionchanger : MonoBehaviour
 				GlobalManager.FullScreen = false;
 				break;
 		}
-
+		fullscreen.Hide();
 		ChangeResolution(resolutionDropdown.value);
 	}
 }

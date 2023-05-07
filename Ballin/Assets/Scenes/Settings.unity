@@ -1578,14 +1578,14 @@ MonoBehaviour:
   m_CaptionImage: {fileID: 0}
   m_ItemText: {fileID: 1849392459}
   m_ItemImage: {fileID: 0}
-  m_Value: 0
+  m_Value: 1
   m_Options:
     m_Options:
+    - m_Text: 2560 x 1440
+      m_Image: {fileID: 0}
     - m_Text: 1920 X 1080
       m_Image: {fileID: 0}
     - m_Text: 1280 X 720
-      m_Image: {fileID: 0}
-    - m_Text: 640 x 360
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:

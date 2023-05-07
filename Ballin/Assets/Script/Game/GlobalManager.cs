@@ -19,9 +19,9 @@ public class GlobalManager
 
     public static int Res { get; set; }
     /*
-     * 0: 1920:1080
-     * 1: 1280:720
-     * 2: 640:360
+     * 1: 1920:1080
+     * 2: 1280:720
+     * 0: 2560:1440
      */
 
     public static bool FullScreen { get; set; } = true;
