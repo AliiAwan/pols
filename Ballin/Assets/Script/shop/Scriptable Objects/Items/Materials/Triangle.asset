@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Triangle
   image: {fileID: 21300000, guid: d7ebf7ac560d26e47a64b11000b03306, type: 3}
   coincost: 75
-  material: {fileID: 0}
+  material: {fileID: 2100000, guid: bfbc6aea962ee8843b8eb08b5a4a7ba3, type: 2}

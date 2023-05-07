@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Night
   image: {fileID: 21300000, guid: 47affb628af1d2049965a114a4990ab6, type: 3}
   coincost: 50
-  material: {fileID: 0}
+  material: {fileID: 2100000, guid: 2039a0ad0a9d05549928b70362f54902, type: 2}
